@@ -1,7 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
-
+# React Tutorial (To-do List)
 > Description the project.
 
 
