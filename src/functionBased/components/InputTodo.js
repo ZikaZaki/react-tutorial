@@ -22,7 +22,7 @@ const InputTodo = props => {
         } else {
             alert("Please write item")
         }
-    }
+    };
 
     return (
         <form onSubmit={handleSubmit} className="form-container">
