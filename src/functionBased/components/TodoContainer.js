@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Routes, Route } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import Navbar from "./Navbar";
 import Header from "./Header";
 import InputTodo from "./InputTodo";
@@ -80,7 +80,7 @@ const TodoContainer = () => {
   return (
     <>
       <Navbar />
-      <Routes>
+      <Switch>
         <Route exact path="/">
           <div className="container">
             <div className="inner">
@@ -95,13 +95,11 @@ const TodoContainer = () => {
             </div>
           </div>
         </Route>
-        <Route path="/about">
-          <About />
-        </Route>
+        <Route path="/about" component={About}/>
         <Route path="*">
           <NotMatch />
         </Route>
-      </Routes>
+      </Switch>
     </>
     
   )
